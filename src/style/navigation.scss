@@ -1,0 +1,23 @@
+.navbarLinks {
+    width: 100vw;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    left: 0;
+}
+
+.links {
+    color: rgb(65, 65, 65);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.navbarLinks div {
+    font-family: 'Teko', sans-serif;
+}
+
+.links:hover {
+    color: whitesmoke;
+}

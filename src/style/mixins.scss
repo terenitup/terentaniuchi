@@ -1,6 +1,35 @@
+// About Me
+
 @mixin name {
     color: whitesmoke;
     font-size: 17em;
     font-family: 'Teko', sans-serif;
     font-weight: 900;
+}
+
+// Portfolio
+
+@mixin portfolioContainer {
+    display: grid;
+    grid-template-columns: [text-s] 32% [text-e thumbnail-s] 68% [thumbnail-e];
+    grid-column-gap: 55px;
+    color: whitesmoke;
+    margin-top: 50px;
+}
+
+@mixin portfolioText {
+    grid-column: 1/2;
+    font-family: 'Teko', sans-serif;
+    font-size: 23px;
+    margin-top: 10px;
+    justify-self: end;
+}
+
+@mixin portfolioThumbnail {
+    grid-column: 2/3
+}
+
+@mixin portfolioImg {
+    width: 450px;
+    border-radius: 5px;
 }

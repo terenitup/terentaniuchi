@@ -1,4 +1,8 @@
 @import './mixins';
+@import './navigation';
+@import './home';
+@import './aboutMe';
+@import './portfolio';
 
 html {
     font-size: 62.5%; /* 1rem is 10px */
@@ -35,92 +39,4 @@ body {
 
 }
 
-.navbarLinks {
-    width: 100vw;
-    height: 150px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    left: 0;
-}
 
-.links {
-    color: rgb(65, 65, 65);
-    text-decoration: none;
-    font-size: 1.5em;
-}
-
-.links:hover {
-    color: whitesmoke;
-}
-
-.heading {
-    width: 100vw;
-    height: 100vh;
-    margin-left: 12%;
-    margin-top: 10%;
-}
-
-
-
-.firstTitle {
-    @include name();
-}
-
-.secondTitle {
-    @include name();
-    margin-top: -147px;
-}
-
-.navbarLinks div {
-    font-family: 'Teko', sans-serif;
-}
-
-.subHeading {
-    font-family: 'Teko', sans-serif;
-    color: whitesmoke;
-    font-size: 3em;
-    margin-top: -85px;
-    margin-left: 20%;
-}
-
-/* ABOUT ME PAGE */
-
-.aboutMe_landing {
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    width: 100vw;
-    height: 100vh;
-    grid-column-gap: 15px;
-    margin-top: 50px;
-    align-items: center;
-    margin-top: -100px;
-    
-}
-
-.aboutMe_heading {
-    grid-column-start: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-size: 5em;
-    color: whitesmoke;
-    font-family: 'Teko', sans-serif;
-}
-
-.aboutMe_text {
-    display: flex;
-    grid-column-start: 2;
-    font-size: .3em;
-    color: whitesmoke;
-    font-family: 'Open Sans', sans-serif;
-    text-align: right;
-}
-
-.profilePic {
-    height: 500px;
-    display: flex;
-    justify-self: flex-start;
-    grid-column-start: 3;
-}

@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Home from "./home";
-import Contact from "./contact";
+import Contact from "./contact/contact";
 import AboutMe from "./aboutMe";
 import Portfolio from "./portfolio";
 

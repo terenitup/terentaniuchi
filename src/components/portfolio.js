@@ -29,8 +29,11 @@ export default class Portfolio extends Component {
         </div>
 
         <div className='birthdayCountdown'>
+          <div className='birthdayCountdown__text1'>
+            Birthday
+          </div>
           <div className='birthdayCountdown__text'>
-            Birthday Countdown App
+            Countdown App
           </div>
           
           <div className='birthdayCountdown__thumbnail'>

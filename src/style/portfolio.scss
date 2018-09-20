@@ -9,8 +9,7 @@
 
 .madlibs {
     @include portfolioContainer();
-    
-    
+        
     grid-row-start: 1;
     
     &__text {
@@ -34,6 +33,12 @@
     @include portfolioContainer();
 
     grid-row-start: 2;
+
+    &__text1 {
+        @include portfolioText();
+        font-size: 5em;
+        margin-bottom: -50px;
+    }
 
     &__text {
         @include portfolioText();

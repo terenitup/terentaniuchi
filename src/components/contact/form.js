@@ -27,31 +27,36 @@ class Form extends React.Component {
   render() {
     return (
       <form>
-            <input 
+            <input
+                className='firstName' 
                 name='firstName'
                 placeholder='First Name' 
                 value={this.state.firstName} 
                 onChange={e => this.handleChange(e)} 
             />
             <input 
+                className='lastName'
                 name='lastName'
                 placeholder='Last Name' 
                 value={this.state.lastName} 
                 onChange={e => this.handleChange(e)} 
             />
-            <input 
+            <input
+                className='email' 
                 name='email'
                 placeholder='Email' 
                 value={this.state.email} 
                 onChange={e => this.handleChange(e)} 
             />
             <input 
+                className='phoneNumber'
                 name='phoneNumber'
                 placeholder='Phone Number' 
                 value={this.state.phoneNumber} 
                 onChange={e => this.handleChange(e)} 
             />
             <input 
+                className='message'
                 name='message'
                 placeholder='Message' 
                 value={this.state.message} 

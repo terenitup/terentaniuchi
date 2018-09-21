@@ -38,7 +38,7 @@ class Contact extends Component {
           </div>
         </div>
         
-        <div className='contact__form'> 
+        {/* <div className='contact__form'> 
           <Form onSubmit={fields => this.onSubmit(fields)} />
         </div>
         <div className='contact__formOutput'>
@@ -46,7 +46,7 @@ class Contact extends Component {
             {JSON.stringify(this.state.fields, null, 2)}
           </p>
         </div>
-        
+         */}
 
       </div>
     );

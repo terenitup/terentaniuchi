@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import img from './teren.jpg';
+import img from './images/teren.jpg';
 
 
 export default class AboutMe extends Component {

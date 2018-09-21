@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import madlibs from './madlibs.png';
-import birthdayCountdown from './birthdayCountdown.png';
+import madlibs from './images/madlibs.png';
+import birthdayCountdown from './images/birthdayCountdown.png';
 
 export default class Portfolio extends Component {
 //   constructor() {

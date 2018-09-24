@@ -38,12 +38,23 @@
         grid-column-start: 1;
         font-size: 2.3em;
         justify-self: center;
+
+        i:after {
+            content: "\00a0";
+        }
     }
 
     &__paragraphText {
         grid-column-start: 2;
         font-size: 2.3em;
-        
+    
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+        } 
+        a:hover {
+            color: aquamarine;
+        }
     }
 
 

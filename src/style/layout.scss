@@ -1,0 +1,24 @@
+.layout {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: [nav-s] 150px [nav-e content-s] 1fr [content-e];
+    grid-template-columns: [content-s nav-s] 50px [contentInset-s] 1fr [contentInset-e] 50px [nav-e content-e];
+
+    .navbarLinks {
+        grid-row: nav-s/nav-e;
+        grid-column: nav-s/nav-e;
+    }
+
+    &__content {
+        grid-row: content-s/content-e;
+        grid-column: content-s/content-e;
+    }
+
+    &__contentInset {
+        grid-row: content-s/content-e;
+        grid-column: contentInset-s/contentInset-e;
+    }
+}
+

@@ -10,7 +10,7 @@ export default class Portfolio extends Component {
   render() {
     return (
 
-      <div className='portfolio__container'>
+      <div className='portfolio__container layout__content'>
         <div className='portfolio'>
           <div className='madlibs'>
             <div className='madlibs__text'>

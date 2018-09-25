@@ -19,30 +19,63 @@ class Contact extends Component {
         <div className='contact__info'>
           <h1 className='contact__title'>CONTACT</h1>
           <div className='contact__paragraph'>
-            <div className='contact__paragraphHeading'>
-              <div>
-                <i class="fas fa-mobile-alt"></i>
-                phone
+              
+              <div className='contact__icons'>
+                <div>
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div>
+                  <i class="far fa-envelope"></i>
+                </div>
+                <div>
+                  <i class="fab fa-github"></i>
+                </div>
+                <div>
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div>
+                  <i class="fab fa-instagram"></i>
+                </div>
+                <div>
+                  <br></br>
+                  <br></br>
+                  <i class="fab fa-facebook-f"></i>
+                </div>
               </div>
-              <div><i class="far fa-envelope"></i>
-                email
+              
+              <div className='contact__icon-text'>
+                <div>
+                  phone
+                </div>
+                <div>
+                  email
+                </div>
+                <div>
+                  <a href="https://github.com/terenitup" 
+                    target="_blank">
+                    github
+                  </a>
+                </div>
+                <div>
+                  <a href="https://linked.com/in/terentaniuchi"
+                    target="_blank">
+                    linkedin
+                  </a>
+                </div>
+                <div>
+                  instagram
+                </div>
+                <div>
+                  <br></br>
+                  <br></br>
+                  <a href="https://www.facebook.com/terent"
+                  target="_blank">
+                  facebook
+                  </a>
+                </div>
               </div>
-              <div><i class="fab fa-github"></i>
-                github
-              </div>
-              <div><i class="fab fa-linkedin-in"></i>
-                linkedin
-              </div>
-              <div><i class="fab fa-instagram"></i>
-                instagram
-              </div>
-              <div>
-                <br></br>
-                <br></br>
-                <i class="fab fa-facebook-f"></i>
-                facebook
-              </div>
-            </div>
+
+            
             <div className='contact__paragraphText'>
               <div>808.753.3247</div>
               <div>terentaniuchi@gmail.com</div>
@@ -62,14 +95,18 @@ class Contact extends Component {
                 <a href="https://www.instagram.com/teren_itup/"
                   target="_blank">
                   @teren_itup
-                </a> 
+                </a>
+              </div>
+              <div>
                 <a href="https://www.instagram.com/kei_designs/"
                   target="_blank"> 
-                  <br></br>@kei_designs
+                  @kei_designs
                 </a>
+              </div>
+              <div>
                 <a href="https://www.instagram.com/foodlakecity/"
                   target="_blank"> 
-                  <br></br>@foodlakecity
+                  @foodlakecity
                 </a>
               </div>
               <div>
@@ -81,18 +118,8 @@ class Contact extends Component {
             </div>
           </div>
         </div>
-        
-        {/* <div className='contact__form'> 
-          <Form onSubmit={fields => this.onSubmit(fields)} />
-        </div>
-        <div className='contact__formOutput'>
-          <p>
-            {JSON.stringify(this.state.fields, null, 2)}
-          </p>
-        </div>
-         */}
-
       </div>
+
     );
   } 
 }

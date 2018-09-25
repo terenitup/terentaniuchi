@@ -1,17 +1,15 @@
 .contact {
     width: 100vw;
     height: 100vh;
-
-    display: grid;
-    grid-template-rows: 1fr 3fr 3fr 1fr; 
+    margin-top: 75px;
 
     &__info {
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 150px 1fr;
+        grid-template-columns: 1/-1;
         grid-row-start: 2;
-        // grid-template-columns: 1fr 1fr;
         justify-content: center;
-        align-items: center;
+        align-items: start;
         width: 100vw;
         
         color: white;
@@ -28,24 +26,34 @@
 
     &__paragraph {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: [icons-s] 50px [icons-e iconText-s] 1fr [iconText-e paragraphText-s] 1fr [paragraphText-e];
         grid-row-start: 2;
         grid-column-start: 2;
     }
-
-
-    &__paragraphHeading {
-        grid-column-start: 1;
-        font-size: 2.3em;
+    
+    &__icons {
+        grid-column: icons-s/icons-e;
         justify-self: center;
 
-        i:after {
-            content: "\00a0";
+        font-size: 2.3em;
+    }
+
+    &__icon-text {
+        grid-column: 2/3;
+
+        font-size: 2.3em;
+
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        a:hover {
+            color: aquamarine;
         }
     }
 
     &__paragraphText {
-        grid-column-start: 2;
+        grid-column: paragraphText-s/pragraphText-e;
         font-size: 2.3em;
     
         a {

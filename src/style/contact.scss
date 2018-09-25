@@ -46,9 +46,13 @@
         a {
             text-decoration: none;
             color: whitesmoke;
+            transition: all .3s ease;
         }
         a:hover {
+            text-decoration: none;
             color: rgb(160, 160, 160);
+            transform: scale(1.05);
+            font-size: 1.05em;
         }
     }
 
@@ -62,6 +66,7 @@
             transition: all .3s ease;
         } 
         a:hover {
+            text-decoration: none;
             color: rgb(160, 160, 160);
             transform: scale(1.05);
             font-size: 1.05em;

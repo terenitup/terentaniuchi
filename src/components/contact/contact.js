@@ -34,12 +34,10 @@ class Contact extends Component {
                   <i class="fab fa-linkedin-in"></i>
                 </div>
                 <div>
-                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-facebook-f"></i>
                 </div>
                 <div>
-                  <br></br>
-                  <br></br>
-                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-instagram"></i>
                 </div>
               </div>
               
@@ -63,15 +61,13 @@ class Contact extends Component {
                   </a>
                 </div>
                 <div>
-                  instagram
+                  <a href="https://www.facebook.com/terent"
+                    target="_blank">
+                    facebook
+                  </a>
                 </div>
                 <div>
-                  <br></br>
-                  <br></br>
-                  <a href="https://www.facebook.com/terent"
-                  target="_blank">
-                  facebook
-                  </a>
+                  instagram
                 </div>
               </div>
 
@@ -92,6 +88,12 @@ class Contact extends Component {
                 </a>
               </div>
               <div>
+                <a href="https://www.facebook.com/terent"
+                  target="_blank">
+                  facebook.com/terent
+                </a>
+              </div>
+              <div>
                 <a href="https://www.instagram.com/teren_itup/"
                   target="_blank">
                   @teren_itup
@@ -107,12 +109,6 @@ class Contact extends Component {
                 <a href="https://www.instagram.com/foodlakecity/"
                   target="_blank"> 
                   @foodlakecity
-                </a>
-              </div>
-              <div>
-                <a href="https://www.facebook.com/terent"
-                  target="_blank">
-                  facebook.com/terent
                 </a>
               </div>
             </div>

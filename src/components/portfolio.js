@@ -19,7 +19,7 @@ export default class Portfolio extends Component {
             
             <div className='madlibs__thumbnail'>
               <a className='madlibs__link' 
-                href='https://tt-madlibs.herokuapp.com/'
+                href='https://madlibs-game.herokuapp.com/'
                 target='_blank'  
               >
                 <img className='madlibs__img' 
@@ -40,7 +40,7 @@ export default class Portfolio extends Component {
             
             <div className='birthdayCountdown__thumbnail'>
               <a className='birthdayCountdown__link' 
-                href='https://tt-birthday-countdown.herokuapp.com/'
+                href='https://countbirthday.herokuapp.com/'
                 target='_blank'  
               >
                 <img className='birthdayCountdown__img' 

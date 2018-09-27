@@ -82,7 +82,7 @@ class Contact extends Component {
                 </a>
               </div>
               <div>
-                <a href="https://linked.com/in/terentaniuchi"
+                <a href="https://linkedin.com/in/terentaniuchi"
                   target="_blank">
                   linkedin.com/in/terentaniuchi                
                 </a>

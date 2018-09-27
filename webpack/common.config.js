@@ -1,5 +1,6 @@
 // webpack plugins
 const SplitChunksPlugin = require('webpack/lib/optimize/SplitChunksPlugin');
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 module.exports = {
   entry: {
@@ -43,5 +44,11 @@ module.exports = {
       name: ['app', 'vendor'],
       minChunks: Infinity,
     }),
+    new CopyWebpackPlugin([
+      {
+        from: 'node_modules/pdfjs-dist/cmaps/',
+        to: 'cmaps/'
+      },
+    ]),
   ],
 };

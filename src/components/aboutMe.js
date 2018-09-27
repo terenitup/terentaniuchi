@@ -45,9 +45,12 @@ export default class AboutMe extends Component {
               </a>
             </div>
 
-            <div className='resume__container'>
+            {/* <div className='resume__container'>
               <div className='resume__skills'>
                 Skills
+              </div>
+              <div className='resume__skillsTitles'>
+
               </div>
               <div className='resume__education'>
                 Education
@@ -56,7 +59,7 @@ export default class AboutMe extends Component {
                 Experience
               </div>
               
-            </div>
+            </div> */}
 
 
 

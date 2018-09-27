@@ -1,0 +1,57 @@
+.resume {
+    display: grid;
+    grid-template-rows: 500px 1fr;
+    grid-template-columns: 200px 1fr 200px;
+
+    &__title {
+        grid-column: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: whitesmoke;
+        font-size: 5em;
+        font-family: 'Teko', sans-serif;    
+        border-top: 2px solid whitesmoke;
+        border-bottom: 2px solid whitesmoke;
+        margin-bottom: 50px;
+    }
+
+    a {
+        @include link;
+    }
+    a:hover {
+        @include hover;
+    }
+
+    &__container {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        display: grid;
+        grid-template-columns: 27% 73%;
+
+        
+    }
+    
+    @mixin resumeTitle {
+        color: whitesmoke;
+        font-size: 4.3em;
+        font-family: 'Teko', sans-serif; 
+        grid-column: 1/2;
+        text-align: right;
+    }
+
+    &__skills {
+        @include resumeTitle();
+
+    }
+
+    &__education {
+        @include resumeTitle()
+    }
+
+    &__experience {
+        @include resumeTitle()
+    }
+    
+}

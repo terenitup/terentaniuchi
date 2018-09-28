@@ -3,11 +3,40 @@ import img from '../images/teren.jpg';
 
 
 export default class AboutMe extends Component {
-//   constructor() {
-//     super()
-//   }
+  constructor() {
+    super()
+
+    this.state = {
+      topPage: true,
+    }
+
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  };
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  };
+
+  handleScroll = (event) => {
+    if (window.scrollY < 405) {
+      this.setState({ topPage: true })
+      console.log(this.state.topPage, event)
+    } else {
+      this.setState({ topPage: false })
+      console.log(this.state.topPage, event)
+    }
+  };
+
+
 
   render() {
+    
+    const dotScrollClass1 = `dot-scroll__item__${this.state.topPage}`
+    const dotScrollClass2 = `dot-scroll__item__${this.state.topPage}`
+
     return (
       <div>
         <div className="aboutMe_landing layout__content">
@@ -49,12 +78,14 @@ export default class AboutMe extends Component {
 
           <div className='dot-scroll'>
               <ul className='dot-scroll__list'>
-                <li className='dot-scroll__item is-active'>
-                  <a href='#' class='dot-scroll__link'>ABOUT ME</a>
+                <li className={(this.state.topPage) ? 'dot-scroll__item__selected' : 'dot-scroll__item__normal'}>
+                  <a href='#' className='dot-scroll__link'></a>
                 </li>
-                <li className='dot-scroll__item is-active'>
-                  <a href='#' class='dot-scroll__link'>RESUME</a>
+    
+                <li className={(this.state.topPage) ? 'dot-scroll__item__normal' : 'dot-scroll__item__selected'}>
+                  <a href='#' className='dot-scroll__link'></a>
                 </li>
+                
               </ul>
           </div>
         

@@ -7,10 +7,10 @@ export default class Home  extends Component {
 
   render() {
     return (
-      <div className="heading layout__content">
-        <div className="layout__contentInset">
-          <div className="firstTitle">TEREN</div>
-          <div className="secondTitle">TANIUCHI</div> 
+      <div className="homeContainer layout__contentInset">
+        <div className="homeSubContainer">
+          <div className="firstTitle">TEREN<br></br>TANIUCHI</div>
+          {/* <div className="secondTitle">TANIUCHI</div>  */}
 
           <p className="subHeading">Full Stack Software Developer & Designer</p>
         </div>

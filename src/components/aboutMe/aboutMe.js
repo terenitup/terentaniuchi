@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import img from './images/teren.jpg';
-import resume from './images/TerenTaniuchi_Resume.001.png';
+import img from '../images/teren.jpg';
 
 
 export default class AboutMe extends Component {
@@ -12,7 +11,7 @@ export default class AboutMe extends Component {
     return (
       <div>
         <div className="aboutMe_landing layout__content">
-          
+      
           <div className="aboutMe">
             <div className="aboutMe_heading">
               ABOUT ME
@@ -33,6 +32,7 @@ export default class AboutMe extends Component {
             </div>
             
             <img className="profilePic" src={img} alt="Profile Picture of Teren" />
+
           </div>
 
           <div className='resume'>
@@ -45,24 +45,17 @@ export default class AboutMe extends Component {
               </a>
             </div>
 
-            {/* <div className='resume__container'>
-              <div className='resume__skills'>
-                Skills
-              </div>
-              <div className='resume__skillsTitles'>
+          </div>
 
-              </div>
-              <div className='resume__education'>
-                Education
-              </div>
-              <div className='resume__experience'>
-                Experience
-              </div>
-              
-            </div> */}
-
-
-
+          <div className='dot-scroll'>
+              <ul className='dot-scroll__list'>
+                <li className='dot-scroll__item is-active'>
+                  <a href='#' class='dot-scroll__link'>ABOUT ME</a>
+                </li>
+                <li className='dot-scroll__item is-active'>
+                  <a href='#' class='dot-scroll__link'>RESUME</a>
+                </li>
+              </ul>
           </div>
         
         </div>

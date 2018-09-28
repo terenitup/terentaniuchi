@@ -1,12 +1,16 @@
 @import './resume';
+@import './dotScroll';
 
 .aboutMe_landing {
     display: grid;
     grid-template-rows: [aboutMe-s] auto [aboutMe-e resume-s] 1fr [resume-e];
+    grid-template-columns: [content-s] 1fr [conten-e dotSroll-s] 50px [dotScroll-e];
     grid-row-gap: 50px;
 }
 
 .aboutMe {
+    grid-column: content-s/content-e;
+
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
     width: 100vw;

@@ -19,13 +19,6 @@
     line-height: 109px;
 }
 
-// .secondTitle {
-//     @include name();
-
-//     grid-row: 3/4;
-    
-// }
-
 .subHeading {
 
     grid-row: 3/4;
@@ -33,7 +26,7 @@
     color: whitesmoke;
     font-size: 3em;
     // margin-top: -85px;
-    margin-left: 20%;
+    margin-left: 13%;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -47,6 +40,12 @@
         line-height: 96px;
         transition: all .3s ease;
     }
+
+    .subHeading {
+        font-size: 2.5em;
+        // line-height: 96px;
+        transition: all .3s ease;
+    }
 }
 
 @media only screen and (max-width: 667px) {
@@ -58,6 +57,12 @@
     .firstTitle {
         font-size: 7.5em;
         line-height: 48px;
+        transition: all .3s ease;
+    }
+
+    .subHeading {
+        font-size: 1.7em;
+        margin-left: 0;
         transition: all .3s ease;
     }
 }

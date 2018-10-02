@@ -22,13 +22,23 @@
     }
 }
 
-// @media all and (max-width: 1000px) {
-    
-// }
+@media all and (max-width: 1000px) {
+    .layout {
+        width: 100vw;
+        height: 100vh;
 
-// @media all and (max-width: 480px) {
-//     .column {
-//         width: 100%;
-//     }
-// }
+        display: grid;
+    }
+}
+
+@media all and (max-width: 667px) {
+    .layout {
+        width: 100vw;
+        height: 100vh;
+
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+}
 

@@ -2,19 +2,20 @@
     display: grid;
     grid-template-rows: 500px 115px;
     grid-template-columns: 200px 1fr 200px;
+    justify-items: center;
+    align-items: center;
+    grid-row: 2/3;
 
     &__title {
-        grid-column: 2/3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        grid-column: 2/3;  
 
         color: whitesmoke;
         font-size: 5em;
         font-family: 'Teko', sans-serif;    
         border-top: 2px solid whitesmoke;
         border-bottom: 2px solid whitesmoke;
-        // margin-bottom: 250px;
+
+        padding: 50px;
     }
 
     a {
@@ -22,36 +23,41 @@
     }
     a:hover {
         @include hover;
-    }
+    }    
+}
 
-    &__container {
-        grid-row: 2/3;
-        grid-column: 2/3;
+@media all and (max-width: 1000px) {
+
+    .resume {
         display: grid;
-        grid-template-columns: 27% 73%;
+        grid-template-rows: 1fr 0.3fr;
+        grid-template-columns: 1fr;
+        
+        &__title {
+            grid-column: 1/2;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+    }
+}
+
+@media all and (max-width: 667px) {
+    
+    .resume {
+        display: grid;
+        grid-template-rows: 1fr 0.3fr;
+        grid-template-columns: 1fr;
 
         
+        &__title {
+            grid-column: 1/2;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
     }
-    
-    @mixin resumeTitle {
-        color: whitesmoke;
-        font-size: 4.3em;
-        font-family: 'Teko', sans-serif; 
-        grid-column: 1/2;
-        text-align: right;
-    }
-
-    &__skills {
-        @include resumeTitle();
-
-    }
-
-    &__education {
-        @include resumeTitle()
-    }
-
-    &__experience {
-        @include resumeTitle()
-    }
-    
 }
+
+
+
+
+

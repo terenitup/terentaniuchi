@@ -39,14 +39,14 @@ export default class AboutMe extends Component {
 
     return (
       <div>
-        <div className="aboutMe_landing layout__content">
+        <div className="aboutMe_landing layout__contentInset">
       
           <div className="aboutMe">
             <div className="aboutMe_heading">
               ABOUT ME
               <div className="aboutMe-text">
                 I am an analytically minded professional with significant data analysis and manipulation experience and a love for coding. 
-                I am also a creative thinker with a keen eye for aesthetics with experience designing <br></br> web and print applications.
+                I am also a creative thinker with a keen eye for aesthetics with experience designing web and print applications.
               </div>
               
               <div className='aboutMe-text-2'>
@@ -85,7 +85,6 @@ export default class AboutMe extends Component {
                 <li className={(this.state.topPage) ? 'dot-scroll__item__normal' : 'dot-scroll__item__selected'}>
                   <a href='#' className='dot-scroll__link'></a>
                 </li>
-                
               </ul>
           </div>
         

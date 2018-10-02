@@ -3,51 +3,53 @@
 
 .aboutMe_landing {
     display: grid;
-    grid-template-rows: [aboutMe-s] auto [aboutMe-e resume-s] 1fr [resume-e];
+    grid-template-rows: [aboutMe-s] 1fr [aboutMe-e resume-s] 1fr [resume-e];
     grid-template-columns: [content-s] 1fr [conten-e dotSroll-s] 50px [dotScroll-e];
     grid-row-gap: 50px;
 }
 
 .aboutMe {
     grid-column: content-s/content-e;
-
+    grid-row: aboutMe-s/aboutMe-e;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
     width: 100vw;
-    height: 100vh;
+    // height: 100vh;
     grid-column-gap: 35px;
     align-items: center;
-    margin-top: -55px;
+
+    grid-row: 1/2;
+
+    margin-top: -5%;
 }
 
 .aboutMe_heading {
-    grid-column-start: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    grid-column: 2/3;
     font-size: 5em;
     color: whitesmoke;
     font-family: 'Teko', sans-serif;
+
+    text-align: right;
 }
 
 .aboutMe-text {
-    display: flex;
-    grid-column-start: 2;
+    // display: flex;
+    grid-column: 2/3;
     font-size: .3em;
     color: whitesmoke;
     font-family: 'Open Sans', sans-serif;
     text-align: right;
-    width: 400px;
+    // width: 400px;
 }
 
 .aboutMe-text-2 {
-    display: flex;
-    grid-column-start: 2;
+    // display: flex;
+    grid-column: 2/3;
     font-size: .3em;
     color: whitesmoke;
     font-family: 'Open Sans', sans-serif;
     text-align: right;
-    width: 400px;
+    // width: 400px;
     margin-top: 10px;
 }
 
@@ -56,6 +58,80 @@
     display: flex;
     justify-self: flex-start;
     grid-column: 3/4;
+    margin-top: 50px;
+}
+
+@media all and (max-width: 1000px) {
+    .aboutMe_landing {
+        display: grid;
+        grid-template-rows: [aboutMe-s] 1fr [aboutMe-e resume-s] 1fr [resume-e];
+    }
+
+    .aboutMe {
+        display: grid;
+        grid-template-columns: 1fr 25px;
+        grid-row: aboutMe-s/aboutMe-e;
+    }
+
+    .aboutMe_heading {
+        text-align: center; 
+        grid-column: 1/2;
+        grid-row: aboutMe-s/aboutMe-e;
+    }
+
+    .aboutMe-text {
+        text-align: center;
+        grid-column: 1/2;
+        margin-left: 35px;
+        margin-right: 35px;
+        grid-row: aboutMe-s/aboutMe-e;
+    }
+
+    .aboutMe-text-2 {
+        text-align: center;
+        grid-column: 1/2;
+        margin-left: 35px;
+        margin-right: 35px;
+        grid-row: aboutMe-s/aboutMe-e;
+    }
+
+    .profilePic {
+        height: 350px;
+        grid-column: 1/2;
+
+        justify-self: center;
+    }
+}
+
+@media all and (max-width: 667px) {
+    .aboutMe_landing {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/2;
+        
+    }
+
+    .aboutMe {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/2;
+        margin-left: 15px;
+        margin-right: 15px;
+        grid-row: aboutMe-s/aboutMe-e;
+    }
+
+    .aboutMe_heading {
+        text-align: center; 
+    }
+
+    .aboutMe-text {
+        text-align: center;
+    }
+
+    .profilePic {
+        height: 300px;
+        margin-bottom: 50px;
+    }
 }
 
 

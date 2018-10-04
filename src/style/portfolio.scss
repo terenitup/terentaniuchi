@@ -2,11 +2,13 @@
 .portfolio {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-row-gap: 25px;
+    // grid-row-gap: 25px;
     background-color: rgb(29, 29, 29); 
     width: 100vw;
     height: 100%;
-    
+
+    margin: 0;
+    padding: 0;
 }
 
 .madlibs {
@@ -65,12 +67,17 @@
 }   
 
 @media only screen and (max-width: 667px) {
+    .portfolio_container {
+        margin: 0;
+    }
         
     .portfolio {
         transition: all .3s ease;
 
-        margin-left: 15px;
-        margin-right: 15px;
+        // margin-left: 15px;
+        // margin-right: 15px;
+
+        width: 100vw;
     }
 
     .madlibs {

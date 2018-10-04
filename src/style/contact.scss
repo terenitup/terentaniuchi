@@ -82,3 +82,49 @@
         grid-row-start: 4;
     }
 }
+
+@media all and (max-width: 667px) {
+
+    .contact {
+
+        &__paragraph {
+            display: grid;
+            grid-template-columns: [icons-s] 35px [icons-e iconText-s] 0.4fr [iconText-e paragraphText-s] 1fr [paragraphText-e];
+        }
+
+        &__icons {
+            font-size: 1.9em;
+        }
+    
+        &__icon-text {
+            font-size: 1.9em;
+        }
+
+        &__paragraphText {
+            font-size: 1.9em;
+        }
+    }
+}
+
+@media all and (max-width: 320px) {
+
+    .contact {
+
+        &__paragraph {
+            display: grid;
+            grid-template-columns: [icons-s] 35px [icons-e iconText-s] 0.4fr [iconText-e paragraphText-s] 1fr [paragraphText-e];
+        }
+
+        &__icons {
+            font-size: 1.7em;
+        }
+    
+        &__icon-text {
+            font-size: 1.7em;
+        }
+
+        &__paragraphText {
+            font-size: 1.7em;
+        }
+    }
+}
